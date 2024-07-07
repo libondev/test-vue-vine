@@ -1,5 +1,5 @@
 import antfu from '@antfu/eslint-config'
-import vineParser from '@vue-vine/eslint-parser'
+import { parse } from '@vue-vine/eslint-parser'
 
 export default antfu([
   {
@@ -22,7 +22,7 @@ export default antfu([
       'src/**/*.vine.ts',
     ],
     languageOptions: {
-      parser: vineParser,
+      parser: parse,
     },
     rules: {
       'no-console': 'off',
